@@ -21,9 +21,9 @@ public class SweetGift {
         sweetBox.forEach(System.out::println);
         System.out.println("Общий вес: " + sweetBox.stream()
                 .map(Candy::getWeight)
-                .reduce(0,Integer::sum));
+                .reduce(0, Integer::sum));
         System.out.println("Общая стоимость: " + sweetBox.stream()
                 .map(Candy::getCost)
-                .reduce(0,Integer::sum));
+                .reduce(0.0, Double::sum));
     }
 }

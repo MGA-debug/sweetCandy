@@ -1,14 +1,16 @@
 package ru.appline.logic;
 
-import ru.appline.logic.sweets.Candy;
+import ru.appline.logic.sweets.Cake;
+import ru.appline.logic.sweets.Chocolate;
+import ru.appline.logic.sweets.Lollipop;
 import ru.appline.logic.sweets.SweetGift;
 
 public class Base {
     public static void main(String[] args) {
         new SweetGift().collectGift(
-                new Candy("Зефир", 25, 100, "розовый"),
-                new Candy("Мармелад", 50, 125, "плохо жуётся"),
-                new Candy("Леденец", 15, 40, "кладенец"))
+                new Cake("Наполеон", 252, 100, "300 ккал"),
+                new Chocolate("Молочный", 75, 50, "Бельгия"),
+                new Lollipop("Бонпари", 25, 80, "Кислые"))
                 .getInformation();
     }
 }
